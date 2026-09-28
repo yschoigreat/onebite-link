@@ -1,0 +1,91 @@
+import type { Bookmark, Folder } from "./types";
+
+export const folders: Folder[] = [
+  { id: "dev", name: "개발", count: 4 },
+  { id: "design", name: "디자인", count: 3 },
+  { id: "read", name: "읽을거리", count: 2 },
+  { id: "etc", name: "기타", count: 1 },
+];
+
+export const bookmarks: Bookmark[] = [
+  {
+    id: "1",
+    title: "Next.js 공식 문서",
+    description: "App Router, 서버 컴포넌트, 캐싱 등 Next.js의 모든 것을 다루는 공식 문서.",
+    url: "https://nextjs.org/docs",
+    folderId: "dev",
+    createdAt: "2026-09-25",
+  },
+  {
+    id: "2",
+    title: "Tailwind CSS",
+    description: "유틸리티 퍼스트 CSS 프레임워크. 빠르게 UI를 구성할 수 있습니다.",
+    url: "https://tailwindcss.com",
+    folderId: "dev",
+    createdAt: "2026-09-24",
+  },
+  {
+    id: "3",
+    title: "React 공식 문서",
+    description: "React 19의 새로운 기능과 개념을 배울 수 있는 공식 가이드.",
+    url: "https://react.dev",
+    folderId: "dev",
+    createdAt: "2026-09-22",
+  },
+  {
+    id: "4",
+    title: "TypeScript Handbook",
+    description: "TypeScript의 타입 시스템을 처음부터 차근차근 설명하는 핸드북.",
+    url: "https://www.typescriptlang.org/docs",
+    folderId: "dev",
+    createdAt: "2026-09-20",
+  },
+  {
+    id: "5",
+    title: "Figma",
+    description: "협업 기반 인터페이스 디자인 도구.",
+    url: "https://www.figma.com",
+    folderId: "design",
+    createdAt: "2026-09-19",
+  },
+  {
+    id: "6",
+    title: "Refactoring UI",
+    description: "개발자를 위한 실용적인 UI 디자인 팁과 원칙 모음.",
+    url: "https://www.refactoringui.com",
+    folderId: "design",
+    createdAt: "2026-09-15",
+  },
+  {
+    id: "7",
+    title: "Dribbble",
+    description: "전 세계 디자이너들의 작업물을 구경할 수 있는 영감의 창고.",
+    url: "https://dribbble.com",
+    folderId: "design",
+    createdAt: "2026-09-12",
+  },
+  {
+    id: "8",
+    title: "Hacker News",
+    description: "개발자와 창업가들이 모이는 기술 뉴스 커뮤니티.",
+    url: "https://news.ycombinator.com",
+    folderId: "read",
+    createdAt: "2026-09-10",
+  },
+  {
+    id: "9",
+    title: "MDN Web Docs",
+    description: "웹 표준 기술에 대한 가장 신뢰할 수 있는 레퍼런스.",
+    url: "https://developer.mozilla.org",
+    folderId: "read",
+    createdAt: "2026-09-08",
+  },
+  {
+    id: "10",
+    title: "GitHub",
+    description: "코드 호스팅과 협업을 위한 플랫폼.",
+    url: "https://github.com",
+    folderId: "etc",
+    createdAt: "2026-09-01",
+  },
+];
